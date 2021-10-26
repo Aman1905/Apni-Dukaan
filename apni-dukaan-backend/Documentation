@@ -1,0 +1,35 @@
+1. Make the boilerplate of the backend
+
+2. To start the server locally:
+command -> npm run dev
+
+3. Connect the database with the backend locally
+
+4. Then make the APIs of the product which is inside the models folder
+
+4.1 Inside the models folder ProductModel.js file contains the schema of the Products and then we have exported it to ProductController.js file where I have defined each and every API working and then exported that file to ProductRoute.js file where I have created the routing of the backend.
+
+4.2 Now we have made a folder called utils >> ErrorHandler.js so as to write the code for handling all the backend errors but to use it we have to make a middleware (folder) >> Error.js file and import this ErrorHandler file and write the code for middleware
+
+4.3 Now go to app.js file and import the middleware then use it.
+
+5. Inside the middleware folder we made another file so as to handle the async errors and they are using try and catch method just which we wil implement inside the ProductController.js file
+
+6. Now we will work on the Pagination and Search filter and for that we are making a file apifeature.js in the utils folder
+
+7. Now we will start working on the authentication part. Make a file UserModel.js inside models folder and there we will define the whole user schema.
+
+8. Now go to controllers folder and make a UserController.js file and write code for registering a user.
+
+9. Make a file UserRoute.js in the routes folder and create the api/routing for registering a user, then go to UserModel.js and encrypt the password, then we will generate a JWT Token and will store that in the cookie
+
+* Dependencies Involved :-
+    1. Dotenv
+    2. Mongoose
+    3. Express
+    4. Bcrypts.js
+    5. JSON Web Token
+    6. Validator
+    7. nodemailer
+    8. Cookie Parser
+    9. Body Parser
